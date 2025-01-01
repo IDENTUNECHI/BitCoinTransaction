@@ -7,5 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="junit.jupiter" level="project" />
+    <orderEntry type="library" exported="" name="at.favre.lib.bytes" level="project" />
+    <orderEntry type="library" exported="" name="bouncycastle.bcprov.jdk15on" level="project" />
   </component>
 </module>

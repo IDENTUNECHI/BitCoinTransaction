@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="at.favre.lib.bytes" type="repository">
+    <properties maven-id="at.favre.lib:bytes:1.6.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/at/favre/lib/bytes/1.6.1/bytes-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
