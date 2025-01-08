@@ -1,27 +1,24 @@
-import PasswordSystem.PrivateKey;
-import PasswordSystem.PublicKey;
-
-import java.sql.Time;
+package Player;
 
 public class Player1_Sender {
     private String name;
-    private Time time;
-    private double publicKey;
-    private double privateKey;
-
+    private String publicKey;
+    private String privateKey;
     private double balance;
 
-    public Player1_Sender(double publicKey, double privateKey){
+    public Player1_Sender(String publicKey, String privateKey){
         this.name = "김이든";
         this.publicKey = publicKey;
         this.privateKey = privateKey;
+        balance = 0.0;
     }
 
+
     public double getBalance() { return balance;}
-    public double getPublicKey() {
+    public String getPublicKey() {
         return publicKey;
     }
-    public double getPrivateKey() {
+    public String getPrivateKey() {
         return privateKey;
     }
 }
