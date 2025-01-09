@@ -3,20 +3,24 @@ package Player;
 public class Player2_recipient {
 
     private String name;
-    private String publicKey;
     private String privateKey;
+    private String walletAddress;
 
-    public Player2_recipient(String name, String publicKey, String privateKey){
+    public Player2_recipient(String name, String privateKey,String walletAddress){
         this.name = name;
-        this.publicKey = publicKey;
         this.privateKey = privateKey;
-    }
-
-    public String getPublicKey() {
-        return publicKey;
+        this.walletAddress = walletAddress;
     }
     public String getPrivateKey() {
         return privateKey;
+    }
+
+    public String getWalletAddress() {
+        return walletAddress;
+    }
+
+    public String getName() {
+        return name;
     }
 }
 

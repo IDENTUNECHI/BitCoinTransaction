@@ -2,23 +2,28 @@ package Player;
 
 public class Player1_Sender {
     private String name;
-    private String publicKey;
     private String privateKey;
+    private String walletAddress;
     private double balance;
 
-    public Player1_Sender(String publicKey, String privateKey){
-        this.name = "김이든";
-        this.publicKey = publicKey;
+    public Player1_Sender(String name, String privateKey,String walletAddress){
+        this.name = name;
         this.privateKey = privateKey;
+        this.walletAddress = walletAddress;
         balance = 0.0;
     }
 
 
     public double getBalance() { return balance;}
-    public String getPublicKey() {
-        return publicKey;
+
+    public String getWalletAddress() {
+        return walletAddress;
     }
     public String getPrivateKey() {
         return privateKey;
+    }
+
+    public String getName() {
+        return name;
     }
 }
