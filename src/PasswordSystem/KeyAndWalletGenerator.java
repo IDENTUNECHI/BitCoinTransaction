@@ -10,7 +10,7 @@ import java.security.SecureRandom;
 /**
  * 블록체인 지갑 주소 생성
  */
-public class BlockchainWallet {
+public class KeyAndWalletGenerator {
 
     private PrivateKey privateKey;
     private PublicKey publicKey;
@@ -81,26 +81,26 @@ public class BlockchainWallet {
      * 개인키를 반환합니다.
      * @return PrivateKey
      */
-    public String getPrivateKey() {
+    public PrivateKey getPrivateKey() {
         if (privateKey == null) {
             throw new IllegalStateException("Private key has not been initialized. Call generateKeyPair() first.");
         }
-        return privateKey.toString();
+        return privateKey;
     }
 
     /**
      * 공개키를 반환합니다.
      * @return PublicKey
      */
-    public String getPublicKey() {
+    public PublicKey getPublicKey() {
         if (publicKey == null) {
             throw new IllegalStateException("Public key has not been initialized. Call generateKeyPair() first.");
         }
-        return publicKey.toString();
+        return publicKey;
     }
 
     public static void main(String[] args) throws Exception {
-        BlockchainWallet test = new BlockchainWallet();
+        KeyAndWalletGenerator test = new KeyAndWalletGenerator();
         test.generateKeyPair();
         test.generateWalletAddress("김이든");
         System.out.println(test.getWalletAddress());
