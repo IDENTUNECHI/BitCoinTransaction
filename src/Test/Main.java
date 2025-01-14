@@ -142,9 +142,9 @@ public class Main {
                     System.out.println("거래 정보 유효 \n");
 
                     // UTXO를 노드에 전파
+                    nodeNetWork(decrypt, digitalSignature1);
                     player1.withdraw(btc);
                     player2.deposit(btc);
-                    nodeNetWork(decrypt, digitalSignature1);
                     System.out.println(player2.getName()+"님께 송금이 완료 되었습니다. \n");
                 }
                 else
@@ -186,9 +186,9 @@ public class Main {
                     System.out.println("거래 정보 유효 \n");
 
                     // UTXO를 노드에 전파
+                    nodeNetWork(decrypt, digitalSignature2);
                     player1.withdraw(btc);
                     player3.deposit(btc);
-                    nodeNetWork(decrypt, digitalSignature2);
                     System.out.println(player3.getName() + "님께 송금이 완료되었습니다. \n");
                 } else {
                     System.out.println("거래 정보 불일치");
